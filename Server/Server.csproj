@@ -51,6 +51,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="static\index1.html" />
+    <Content Include="static\lib.js" />
     <Content Include="static\Stylesheet1.css" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

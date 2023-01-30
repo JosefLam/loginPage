@@ -1,16 +1,18 @@
 ﻿body
 {
-    background-color:darkslategrey;
+    background-color:#0b0b0c;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
 }
 
 .login {
-    text-align:center;
-    padding: 2em;
+    text-align: center;
+    color:white;
+    padding: 4em;
     border: solid 2px black;
     border-radius: 5px;
-    margin:2em;
+    margin: 2em;
+    background-image: url(https://img.freepik.com/free-vector/triangle-geometric-pattern-gold-black-background_53876-100592.jpg);
 }
 
 button {

@@ -12,22 +12,27 @@
         <div>
             <label for="username">
                 Username:
-                <input type="text" name="username" />
+                <input type="text" name="username" id="username"/>
             </label>
         </div>
 
         <div>
             <label for="password">
                 Password:
-                <input type="password" name="password" />
+                <input type="password" name="password" id="password"/>
             </label>
+        </div>
+
+        <div id="hints">
+            Welcome
         </div>
 
 
 
-        <button>i forgot my password (numpty)</button>
-        <button>create an account</button>
-        <button>Login</button>
+        <button onclick="reset()";>i forgot my password (numpty)</button>
+        <button click="createUser()";>create an account</button>
+        <button click="login()" ;>Login</button>
     </div>
+    <script src="lib.js"></script>
 </body>
 </html>
