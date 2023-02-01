@@ -7,8 +7,9 @@
 
 .login {
     text-align: center;
+    font-size:1.5em;
     color:white;
-    padding: 4em;
+    padding: 8em;
     border: solid 2px black;
     border-radius: 5px;
     margin: 2em;
