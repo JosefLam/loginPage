@@ -7,13 +7,13 @@
 
 .login {
     text-align: center;
-    font-size:1.5em;
-    color:white;
+    font-size: 1.5em;
+    color: white;
     padding: 8em;
     border: solid 2px black;
     border-radius: 5px;
     margin: 2em;
-    background-image: url(https://img.freepik.com/free-vector/triangle-geometric-pattern-gold-black-background_53876-100592.jpg);
+    background-image: url("loginBackGrnd");
 }
 
 button {
