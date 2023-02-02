@@ -1,6 +1,16 @@
 ﻿const eHints = document.getElementById("hints");
+const audio = document.getElementById("11");
+var logoClickNum = 0;
 
-
+function logoClick() {
+    console.log("click");
+    logoClickNum += 1;
+    console.log(logoClickNum);
+    if (logoClickNum == 10) {
+        audio.play();
+        console.log("RickRoll")
+    }
+}
 
 function reset() {
 

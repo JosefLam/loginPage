@@ -7,19 +7,21 @@
     <link rel="stylesheet" href="Stylesheet1.css" />
 </head>
 <body>
-    <div class= "login">
-        <img src="logo.png"/>
+    <div class="login">
+        <button onclick="logoClick()" id="logoBtn" style="background-color: transparent; border: none;" ;>
+            <img src="logo.png" />
+        </button>
         <div>
             <label for="username">
                 Username:
-                <input type="text" name="username" id="username"/>
+                <input type="text" name="username" id="username" />
             </label>
         </div>
 
         <div>
             <label for="password">
                 Password:
-                <input type="password" name="password" id="password"/>
+                <input type="password" name="password" id="password" />
             </label>
         </div>
 
@@ -29,10 +31,14 @@
 
 
 
-        <button onclick="reset()";>i forgot my password (numpty)</button>
-        <button click="createUser()";>create an account</button>
+        <button onclick="reset()" ;>i forgot my password (numpty)</button>
+        <button click="createUser()" ;>create an account</button>
         <button click="login()" ;>Login</button>
     </div>
+
+    <audio id="11">
+        <source src="11.mp3" type="audio/mp3">
+    </audio>
     <script src="lib.js"></script>
 </body>
 </html>
