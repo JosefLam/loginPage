@@ -1,7 +1,9 @@
 ﻿const eHints = document.getElementById("hints");
 const audio = document.getElementById("11");
+const newPasswordBox = document.getElementById("newPassword");
 const logoEggNum = 10;
 var logoClickNum = 0;
+var createUserBox = false;
 
 function logoClick() {
     console.log("click");
@@ -18,12 +20,29 @@ function reset() {
 }
 
 function creatUser() {
-
+    if (!createUserBox) {
+        createUserBox = true;
+        newPasswordBox.removeAttribute("hidden");
+    } else {
+        let password = document.getElementById("password").value;
+        let newPassword = document.getElementById("newPassword").value
+        try {
+            if (newPassword == password) {
+                presenceCheck(password, "Please enter your password");
+                lengthCheck(password, 5, 10, "Must be between 5 and character");
+                eHints.innerText = "Account creation";
+            } else {
+                throw "passwords do not match"
+            }
+        } catch (e) {
+            eHints.innerText = e;
+        }
+    }
 }
 
 function login() {
-    let username = document.getElementById("username").value
-    let password = document.getElementById("password").value
+    let username = document.getElementById("username").value;
+    let password = document.getElementById("password").value;
     try {
         presenceCheck(username, "Please enter your username");
         presenceCheck(password, "Please enter your password");
