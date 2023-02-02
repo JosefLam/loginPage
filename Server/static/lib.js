@@ -19,8 +19,10 @@ function reset() {
 
 }
 
-function creatUser() {
+function createUser() {
+    console.log("click");
     if (!createUserBox) {
+        console.log("box should show");
         createUserBox = true;
         newPasswordBox.removeAttribute("hidden");
     } else {
