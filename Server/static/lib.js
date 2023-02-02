@@ -1,6 +1,5 @@
 ﻿const eHints = document.getElementById("hints");
 const audio = document.getElementById("11");
-const newPasswordBox = document.getElementById("newPassword");
 const logoEggNum = 10;
 var logoClickNum = 0;
 var createUserBox = false;
@@ -24,7 +23,7 @@ function createUser() {
     if (!createUserBox) {
         console.log("box should show");
         createUserBox = true;
-        newPasswordBox.removeAttribute("hidden");
+        document.getElementById("newPassword").removeAttribute("hidden");
     } else {
         let password = document.getElementById("password").value;
         let newPassword = document.getElementById("newPassword").value
