@@ -1,14 +1,15 @@
 ﻿const eHints = document.getElementById("hints");
 const audio = document.getElementById("11");
+const logoEggNum = 10;
 var logoClickNum = 0;
 
 function logoClick() {
     console.log("click");
     logoClickNum += 1;
     console.log(logoClickNum);
-    if (logoClickNum == 10) {
+    if (logoClickNum == logoEggNum) {
         audio.play();
-        console.log("RickRoll")
+        console.log("RickRoll");
     }
 }
 
