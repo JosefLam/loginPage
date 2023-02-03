@@ -23,7 +23,7 @@ function createUser() {
     if (!createUserBox) {
         console.log("box should show");
         createUserBox = true;
-        document.getElementById("newPassword").removeAttribute("hidden");
+        document.getElementById("passLable").hidden = false;
     } else {
         let password = document.getElementById("password").value;
         let newPassword = document.getElementById("newPassword").value
@@ -31,7 +31,7 @@ function createUser() {
             if (newPassword == password) {
                 presenceCheck(password, "Please enter your password");
                 lengthCheck(password, 5, 10, "Must be between 5 and character");
-                eHints.innerText = "Account creation";
+                eHints.innerText = "Attempting Account creation";
             } else {
                 throw "passwords do not match"
             }
@@ -64,11 +64,9 @@ function lengthCheck(input, minLength, maxLength, message) {
     }
 }
 
-function presenceCheck(input) {
+function presenceCheck(input, message) {
     if (input == "") {
         eHints.innerText = message;
         throw message;
-    } else {
-        eHints.innerText = "";
     }
 }
