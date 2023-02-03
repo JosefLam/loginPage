@@ -19,7 +19,7 @@
 }
 
 
-button {
+input[type=button] {
     background-color: white;
     color: black;
     padding: 1em;

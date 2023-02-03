@@ -50,6 +50,7 @@ function login() {
         lengthCheck(username, 5, 10, "Must be between 5 and character");
         lengthCheck(password, 5, 10, "Must be between 5 and character");
         eHints.innerText = "Attempting login";
+        eForm.Submit();
     } catch (e) {
         eHints.innerText = e;
     }
